@@ -27,13 +27,13 @@
     var a = 4;
     var b = 3;
     if (a > 0 && b > 0) {
-        alert(a - b);
+        console.log("3." + (a - b));
     } else
     if (a < 0 && b < 0) {
-        alert(a * b);
+        console.log("3." + (a * b));
     } else
     if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
-        alert(a + b);
+        console.log("3." + (a + b));
     }
 
     //4 
@@ -112,10 +112,53 @@
     }
     var a = 100;
     var b = 10;
-    console.log(minus(a, b));
-    console.log(plus(a, b));
-    console.log(multiply(a, b));
-    console.log(divide(a, b));
-    
+    console.log("5. minus " + a + "-" + b + "=" + minus(a, b));
+    console.log("5. plus " + a + "+" + b + "=" + plus(a, b));
+    console.log("5. multiply " + a + "*" + b + "=" + multiply(a, b));
+    console.log("5. divide " + a + "/" + b + "=" + divide(a, b));
+
     //6
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case 'minus' || '-':
+                return minus(arg1, arg2);
+                break;
+            case 'plus' || '+':
+                return plus(arg1, arg2);
+                break;
+            case 'multiply' || '*':
+                return multiply(arg1, arg2);
+                break;
+            case 'divide' || '/':
+                return divide(arg1, arg2);
+                break;
+            default:
+                return 10;
+                break;
+        }
+
+    }
+    console.log("6. mathOperation minus " + a + "-" + b + "=" + mathOperation(a, b, "minus"));
+    console.log("6. mathOperation plus " + a + "+" + b + "=" + mathOperation(a, b, "plus"));
+    console.log("6. mathOperation multiply " + a + "*" + b + "=" + mathOperation(a, b, "multiply"));
+    console.log("6. mathOperation divide " + a + "/" + b + "=" + mathOperation(a, b, "divide"));
+
+    //7
+
+    //https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Null
+    //null имеет одно единственное значение
+    //0 имеет значения 0 или false
+
+    //8
+
+    function power(val, pow) {
+        if (pow == 1) {
+            return val;
+        } else {
+            return val * power(val, --pow)
+        }
+    }
+
+    console.log("8. 2 в степени 4 = " + power(2, 4));
+
 </script>
