@@ -32,7 +32,7 @@
     if (a < 0 && b < 0) {
         alert(a * b);
     } else
-    if (a < 0 && b > 0) || (a > 0 && b < 0) {
+    if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
         alert(a + b);
     }
 
@@ -41,13 +41,81 @@
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
     var a = getRandomInRange(0, 15);
-    var str = "";
-    for(let i = a, i<=10; i++)
-        {
-            str += i + " ";
-        }
-    alert(str);
-    
+    switch (a) {
+        case 0: // ifif (a === 0)(a === 0)
+            alert(a);
+            break;
+        case 1: // if (a === 0)
+            alert(a);
+            break;
+        case 2: // if (a === 0)
+            alert(a);
+            break;
+        case 3: // if (a === 0)
+            alert(a);
+            break;
+        case 4: // if (a === 0)
+            alert(a);
+            break;
+        case 5: // if (a === 0)
+            alert(a);
+            break;
+        case 6: // if (a === 0)
+            alert(a);
+            break;
+        case 7: // if (a === 0)
+            alert(a);
+            break;
+        case 8: // if (a === 0)
+            alert(a);
+            break;
+        case 9: // if (a === 0)
+            alert(a);
+            break;
+        case 10: // if (a === 0)
+            alert(a);
+            break;
+        case 11: // if (a === 0)
+            alert(a);
+            break;
+        case 12: // if (a === 0)
+            alert(a);
+            break;
+        case 13: // if (a === 0)
+            alert(a);
+            break;
+        case 14: // if (a === 0)
+            alert(a);
+            break;
+
+
+        default: //15
+            alert(a);
+            break;
+    }
+
     //5
+    function minus(a, b) {
+        return a - b;
+    }
+
+    function plus(a, b) {
+        return a + b;
+    }
+
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    function divide(a, b) {
+        return a / b;
+    }
+    var a = 100;
+    var b = 10;
+    console.log(minus(a, b));
+    console.log(plus(a, b));
+    console.log(multiply(a, b));
+    console.log(divide(a, b));
     
+    //6
 </script>
